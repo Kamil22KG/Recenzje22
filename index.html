@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recenzje - Strona Główna</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #fff;
+            background-color: #002B5B; /* Granatowy */
+        }
+
+        header {
+            background-color: #002B5B;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .logo svg {
+            width: 120px;
+            height: 90px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #0A5F38; /* Butelkowa zieleń */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background-color: #0A5F38;
+            color: #fff;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #002B5B;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #001f40;
+        }
+
+        .inline-logo svg {
+            width: 60px;
+            height: 45px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="200" cy="150" r="120" fill="#f2f2f2" />
+                    <circle cx="200" cy="150" r="120" fill="none" stroke="#e0e0e0" stroke-width="4" />
+                    <g transform="translate(180, 175) scale(-1, 1)">
+                        <text font-family="cursive" font-size="120" font-weight="900" stroke="#0A5F38" stroke-width="3" fill="#0A5F38" text-anchor="middle">2</text>
+                    </g>
+                    <text x="220" y="175" font-family="cursive" font-size="120" font-weight="900" stroke="#0A5F38" stroke-width="3" fill="#0A5F38" text-anchor="middle">2</text>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Witamy na stronie 
+                <span class="inline-logo">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="200" cy="150" r="120" fill="#f2f2f2" />
+                        <circle cx="200" cy="150" r="120" fill="none" stroke="#e0e0e0" stroke-width="4" />
+                        <g transform="translate(180, 175) scale(-1, 1)">
+                            <text font-family="cursive" font-size="120" font-weight="900" stroke="#0A5F38" stroke-width="3" fill="#0A5F38" text-anchor="middle">2</text>
+                        </g>
+                        <text x="220" y="175" font-family="cursive" font-size="120" font-weight="900" stroke="#0A5F38" stroke-width="3" fill="#0A5F38" text-anchor="middle">2</text>
+                    </svg>
+                </span>
+            </h1>
+            <p>Znajdziesz tu subiektywne i rzetelne opinie o książkach, filmach, sporcie i wielu innych tematach.</p>
+            <a href="#recenzje" class="btn">Zobacz recenzje</a>
+        </div>
+    </section>
+
+  
+
+<!-- Sekcja Recenzji z filtrowaniem -->
+<section id="recenzje" style="background-color: #f9f9f9; color: #002B5B; padding: 4rem 0;">
+  <div class="container">
+    <h2 class="section-title" style="color: #0A5F38;">Najnowsze Recenzje</h2>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <button class="btn" onclick="filterReviews('all')">Wszystkie</button>
+      <button class="btn" onclick="filterReviews('ksiazka')">Książki</button>
+      <button class="btn" onclick="filterReviews('film')">Filmy</button>
+      <button class="btn" onclick="filterReviews('Sport')">Sport </button>
+      <button class="btn" onclick="filterReviews('Wiedza')">Wiedza </button>
+   </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
+      <a href="recenzja-zbrodnia.html" style="text-decoration: none; color: inherit;">
+  <div class="review-card ksiazka"style="background: #C0C0C0; border-radius: 8px; padding: 1.5rem; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <h3>Recenzja Książki: "Zbrodnia i Kara"</h3>
+    <p>Dogłębna analiza psychologiczna postaci Raskolnikowa...</p>
+  </div>
+</a>
+      
+      <a href="recenzja-incepcja.html"
+         style="text-decoration: none; color: inherit;">
+      <div class="review-card film"style="background: #C0C0C0; border-radius: 8px; padding: 1.5rem; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        <h3>Recenzja Filmu: "Incepcja"</h3>
+        <p>Wciągająca podróż po wielopoziomowych snach. Nolan jak zwykle dostarcza kino wymagające, ale satysfakcjonujące.</p>
+   </div>
+  </a>
+      
+       <a href="recenzja-sport.html"
+          style="text-decoration: none; color: inherit;">
+      <div class="review-card Sport"style="background: #C0C0C0; border-radius: 8px; padding: 1.5rem; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+          <h3>Wydarzenie: "Spójnia zwycięska"</h3>
+          <p>Spojnia Sadlinki się nie zatrzymuje. Kolejna wygrana zespołu w A klasie.</p>
+       </div> 
+  </a>
+      <a href="recenzja-wiedza.html"
+         style="text-decoration: none; color: inherit;">
+      <div class="review-card Wiedza" style="background: #C0C0C0; border-radius: 8px; padding: 1.5rem; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        <h3>Stopy w dół: "Obniżka stóp procentowych"</h3>
+        <p>Wczoraj Rada Polityki Pieniężnej zdecydowała o obniżeniu stóp procentowych o 0,5 punktu procentowego. To znaczący krok, mający na celu wsparcie polskiej gospodarki w trudnym okresie spowolnienia.</p>
+      </div>
+      </a>
+      
+      
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Formularz dodawania recenzji -->
+<section style="background-color: #eef2f3; padding: 4rem 0;">
+  <div class="container">
+    <h2 class="section-title" style="color: #0A5F38;">Dodaj Recenzję</h2>
+    <form onsubmit="addReview(event)" style="max-width: 600px; margin: auto;">
+      <div class="form-group">
+        <label for="category">Kategoria</label>
+        <select id="category" required>
+          <option value="ksiazka">Książka</option>
+          <option value="film">Film</option>
+          <option value="sport">Sport</option>
+          <option value="Wiedza">Wiedza</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="title">Tytuł Recenzji</label>
+        <input type="text" id="title" required>
+      </div>
+      <div class="form-group">
+        <label for="content">Treść Recenzji</label>
+        <textarea id="content" required></textarea>
+      </div>
+      <button type="submit" class="btn">Dodaj Recenzję</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  function addReview(event) {
+    event.preventDefault();
+    const category = document.getElementById('category').value;
+    const title = document.getElementById('title').value;
+    const content = document.getElementById('content').value;
+
+    const container = document.querySelector('#recenzje .container > div:last-child');
+    const card = document.createElement('div');
+    card.className = 'review-card ' + category;
+    card.style = "background:#C0C0C0; border-radius: 8px; padding: 1.5rem; box-shadow: 0 0 10px rgba(0,0,0,0.1);";
+
+    card.innerHTML = `<h3>${title}</h3><p>${content}</p>`;
+    container.prepend(card); // dodaje na początek listy recenzji
+
+    // Resetuj formularz
+    document.getElementById('title').value = '';
+    document.getElementById('content').value = '';
+  }
+</script>
+<script>
+  function filterReviews(category) {
+    const cards = document.querySelectorAll('.review-card');
+    cards.forEach(card => {
+      card.style.display = (category === 'all' || card.classList.contains(category)) ? 'block' : 'none';
+    });
+  }
+</script>
+
+              </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html
